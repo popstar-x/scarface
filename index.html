@@ -152,12 +152,19 @@ body {
 <canvas id="canvas"></canvas>
     <div id="player" style="position: fixed; z-index: -99; width: 100%; background-color: black; opacity: 6%"></div>
 
-    <!-- <video id="vid1" autoplay="" loop="" playsinline="" src="">
-    <source type="video/mp4">
-    </video>-->
+    <music autoplay="" loop="" playsinline="" src="" id="vid1">
+        <source src="https://api.upload.systems/images/n1hGhLYm/download" type="music.mp3">
+    </music>
+        <script>
+            var vid = document.getElementById("vid1");
+            function myFuncbotion() {
+                vid.play();
+            }
+            document.body.addEventListener('click', myFuncbotion)
+        </script>
 
     <video autoplay="" loop="" playsinline="" src="" id="vid1">
-        <source src="https://cdn.discordapp.com/attachments/811065040450224152/811764967224901632/OFB_Bandokay_Double_Lz_SJ_-_Next_Up_S2.14_MixtapeMadness.mp4" type="video/mp4">
+        <source src="https://api.upload.systems/images/sjy0jhzD/download" type="video/mp4">
     </video>
         <script>
             var vid = document.getElementById("vid1");
@@ -185,36 +192,34 @@ body {
 </div>
 
 <div class="footer">
-    <!-- <i><a href="" target="_BLANK"></a></i> -->
+    
     <center><a>© t.me/gorepage</a></center>
 </div>
 
-<!-- <div class="dimmed">
-    <div>
-        <p>despair. anger. hatred. to be hurt. love. love..</p>
-             You put the blade right on my wrist And slit until it spurts Out blood, red, dead 
-        <p> no one. no will. no reason. all but a waste.</p>
-        <p> Mathias is a skid </p>
-    </div>
-</div>  -->
+
 
 <div class="bg"></div>
 <script src="rain.js"></script>
-    <!--  feeling worthless
-Imperfect -->
-<!-- Selfrepping fucking toasters yeet -->
+ 
 </body>
 
 <script>
 var videos = [
-"https://api.upload.systems/images/YaocDKp6/download",
+"https://api.upload.systems/images/sjy0jhzD/download",
 ]
 document.querySelector("#vid1").src = videos[Math.floor(Math.random() * videos.length)];
 
 </script>
 <script>
+    var music = [
+    "https://api.upload.systems/images/n1hGhLYm/download",
+    ]
+    document.querySelector("#vid1").src = music[Math.floor(Math.random() * videos.length)];
+    
+    </script>
+<script>
 function currentTime() {
-  var date = new Date(); /* creating object of Date class */
+  var date = new Date(); 
   var hour = date.getHours();
   var min = date.getMinutes();
   var sec = date.getSeconds();
