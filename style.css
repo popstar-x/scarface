@@ -1,3 +1,32 @@
-body {
-	color: red;
+/**
+ * Copyright (c) 2021 Aiden Baker
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.background  {
+    background: url('pog.webp') 0 / cover fixed;
+    background-position-x: top;
+    background-position-y: right;
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: unset;
+}
+
+.ip{
+    text-align: center;
+    color: rgb(247, 247, 255);
+    font-size: 50px;
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Roboto, sans-serif;
 }
